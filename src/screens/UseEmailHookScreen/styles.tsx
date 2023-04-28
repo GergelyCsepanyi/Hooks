@@ -1,6 +1,6 @@
 import {StyleSheet} from 'react-native';
 
-export const Styles = StyleSheet.create({
+export const styles = StyleSheet.create({
   mainContainerStyle: {
     flex: 1,
     paddingTop: 150,

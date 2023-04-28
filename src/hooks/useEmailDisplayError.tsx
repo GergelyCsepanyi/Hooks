@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import {Text, TextProps} from 'react-native';
-import {Styles} from '../screens/UseEmailDisplayErrorHookScreen/styles';
+import {styles} from '../screens/UseEmailDisplayErrorHookScreen/styles';
 
 type TextElement = JSX.Element & {type: typeof Text} & TextProps;
 
@@ -18,7 +18,7 @@ const useEmail = (initialInput: string): useEmailOutput => {
   const [errorState, setErrorState] = useState<string | undefined>(undefined);
 
   let errorTextComponent: TextElement = (
-    <Text style={Styles.emailErrorTextStyle}>{errorState}</Text>
+    <Text style={styles.emailErrorTextStyle}>{errorState}</Text>
   );
 
   const setEmail = (emailInput: string) => {

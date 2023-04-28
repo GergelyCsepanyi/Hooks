@@ -1,6 +1,6 @@
 import {useState} from 'react';
 
-type useEmailOutput = {
+type UseEmailOutput = {
   email: string;
   emailError: undefined | string;
   setEmail: (emailInput: string) => void;
@@ -8,7 +8,7 @@ type useEmailOutput = {
 
 const emailRegExp = new RegExp('^[a-zA-Z]+@[a-zA-Z]+\\.[a-zA-Z]+$');
 
-const useEmail = (initialInput: string): useEmailOutput => {
+const useEmail = (initialInput: string): UseEmailOutput => {
   const [emailState, setEmailState] = useState<string>(initialInput);
   const [errorState, setErrorState] = useState<string | undefined>(undefined);
 
